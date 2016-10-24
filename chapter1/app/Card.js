@@ -4,9 +4,9 @@ import CheckList from './CheckList';
 class Card extends Component {
   render() {
     return (
-      <div className="card">
-        <div className="card_title">{this.props.title}</div>
-        <div className="card_details">
+      <div className='card'>
+        <div className='card_title'>{this.props.title}</div>
+        <div className='card_details'>
         {this.props.description}
         <CheckList key={this.props.id} cardId={this.props.id} tasks={this.props.tasks} />
         </div>
